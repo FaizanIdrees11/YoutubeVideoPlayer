@@ -1,1 +1,0 @@
--No logs in this version to deploy to users, will be added in the next updates.
