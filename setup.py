@@ -20,7 +20,6 @@ setup(
     install_requires=[
         'Flask',
         'Flask-Limiter',
-        'git+git://github.com/yt-dlp/yt-dlp.git',
         'pycryptodomex',
     ],
 

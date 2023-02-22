@@ -7,8 +7,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath('.')))
-import youtube_dl
-import youtube_dl.app
+import youtube_dl_server
+import youtube_dl_server.app
 
 # -- General configuration -----------------------------------------------------
 
@@ -30,7 +30,7 @@ copyright = '2013-{now:%Y}, Jaime Marquínez Ferrándiz'.format(now=datetime.dat
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-release = youtube_dl.__version__
+release = youtube_dl_server.__version__
 # The short X.Y version.
 version = '.'.join(release.split('.')[:2])
 
@@ -38,7 +38,7 @@ version = '.'.join(release.split('.')[:2])
 # directories to ignore when looking for source files.
 exclude_patterns = ['_build']
 
-ALLOWED_EXTRA_PARAMS = youtube_dl.app.ALLOWED_EXTRA_PARAMS
+ALLOWED_EXTRA_PARAMS = youtube_dl_server.app.ALLOWED_EXTRA_PARAMS
 extra_params = ', '.join('``{}``'.format(param) for param in ALLOWED_EXTRA_PARAMS.keys())
 # the string will be included at the end of every source file that is read
 rst_epilog = """
