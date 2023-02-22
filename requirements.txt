@@ -1,6 +1,5 @@
-mutagen
+git+git://github.com/yt-dlp/yt-dlp.git
+flask
+Flask-Limiter
+gunicorn
 pycryptodomex
-websockets
-brotli; platform_python_implementation=='CPython'
-brotlicffi; platform_python_implementation!='CPython'
-certifi

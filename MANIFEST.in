@@ -1,10 +1,5 @@
-include AUTHORS
-include Changelog.md
 include LICENSE
-include README.md
-include completions/*/*
-include supportedsites.md
-include yt-dlp.1
-include requirements.txt
-recursive-include devscripts *
-recursive-include test *
+include AUTHORS
+include CHANGELOG.rst
+recursive-include docs *
+prune docs/_build
