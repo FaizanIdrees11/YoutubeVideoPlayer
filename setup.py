@@ -9,7 +9,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import subprocess
 import warnings
 
-
 try:
     from setuptools import Command, find_packages, setup
     setuptools_available = True
