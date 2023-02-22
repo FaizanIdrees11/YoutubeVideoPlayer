@@ -10,7 +10,8 @@ import yt_dlp
 from yt_dlp.version import __version__ as youtube_dl_version
 
 
-from .version import __version__
+#from .version import __version__
+#from .version import __version__
 
 
 if not hasattr(sys.stderr, 'isatty'):
@@ -267,8 +268,8 @@ def regexUpdater():
 app = Flask(__name__)
 app.register_blueprint(api)
 app.config.from_pyfile('../application.cfg', silent=True)
-limiter = Limiter(
-    app,
-    key_func=get_remote_address,
-    default_limits=["200 per day", "20 per hour"]
-)
+# limiter = Limiter(
+#     app,
+#     key_func=get_remote_address,
+#     default_limits=["200 per day", "20 per hour"]
+# )
