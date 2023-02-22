@@ -18,9 +18,6 @@ if MACHINE in ('x86', 'x86_64', 'amd64', 'i386', 'i686'):
     MACHINE = 'x86' if ARCH == '32' else ''
 
 
-
-
-
 def main():
     opts, version = parse_options(), read_version()
 
