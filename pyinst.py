@@ -8,6 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import platform
 
+
 from PyInstaller.__main__ import run as run_pyinstaller
 
 from devscripts.utils import read_version
